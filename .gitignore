@@ -45,4 +45,8 @@
 slprj/
 
 # Binary workplace variables
-.mat
+*.mat
+
+# video and image files
+*.avi
+*.png
