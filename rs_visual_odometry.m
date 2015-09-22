@@ -25,7 +25,7 @@ global IMAGE_VROT_Y_RANGE;
 global VTRANS_SCALE;
 global VISUAL_ODO_SHIFT_MATCH;
 
-FOV_DEG = 50;
+FOV_DEG = 80; % was 50 Changed by Hamish
 dpp = FOV_DEG / size(raw_image, 2);
 
 % vtrans 
@@ -40,9 +40,9 @@ image_x_sums = image_x_sums/avint;
 vtrans = mindiff * VTRANS_SCALE;
 
 % a hack to detect excessively large vtrans
-if vtrans > 10
-    vtrans = 0;
-end
+% if vtrans > 10
+%     vtrans = 0;
+% end
 
 prev_vtrans_image_x_sums = image_x_sums;
 
