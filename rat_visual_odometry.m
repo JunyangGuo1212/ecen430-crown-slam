@@ -23,7 +23,7 @@ global IMAGE_ODO_X_RANGE;
 global IMAGE_VTRANS_Y_RANGE;
 global IMAGE_VROT_Y_RANGE;
 
-FOV_DEG = 50;
+FOV_DEG = 3.2*50; %used
 dpp = FOV_DEG / size(raw_image, 2);
 
 % vtrans 
